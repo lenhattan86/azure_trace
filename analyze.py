@@ -1,14 +1,7 @@
-import wget
-from time import sleep
 
+datasetDir="dataset"
 
-textFile="AzurePublicDatasetLinks_unicode.txt"
-
-with open(textFile) as f:
-    lines = f.readlines()
-    for line in lines[2:]:
-        url = line[0:len(line)-4]
-        print(len(line))
-        print(url)
-        filename = wget.download(url)
-        sleep(10)
+def main():
+    print("Analyze the AZURE DATASET")
+    
+if __name__ == "__main__": main()
