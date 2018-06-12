@@ -2,8 +2,10 @@
 download_links="AzurePublicDatasetLinks.txt"
 folder="dataset"
 
+rm -rf $folder
 mkdir $folder
 cd $folder
+
 
 while read line; do    
     url="$line"
